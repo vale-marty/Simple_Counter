@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+    font-family: 'Heebo', 'sans-serif';
+}
+
+#container{
+    margin: 10rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    .titolo{
+        margin-bottom: 2.5rem;
+        h1{
+        font-size: 5rem;
+        font-weight: 600;
+        background: #16ffff; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #16ffff, #1636c9); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #16ffff, #1636c9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        }
+    }
+    .contatore{
+        font-size: 3.8rem;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 2.5rem;
+    }
+    .pulsanti{
+        button{
+            background-color: rgb(22, 54, 201);
+            border-radius: 1.4rem;
+            color: white;
+            font-weight:200 ;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            border: none;
+            box-shadow: 0.12rem 0.2rem;
+            &:hover{
+                background-color: rgb(3, 28, 139);
+                cursor: pointer;
+            }
+        }
+        .reset{
+            margin-right: 0.8rem;
+            margin-left: 0.8rem;
+            font-family: 'Heebo', sans-serif;
+        }
+        .decremento{
+            padding: 0.7rem 1.3rem;
+        }
+    }
+}
